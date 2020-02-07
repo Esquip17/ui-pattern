@@ -1,19 +1,20 @@
-// const url = "https://icanhazdadjoke.com/ ";
-
-// fetch(url)
-//   .then(res => {
-//     console.log("Sucess!", res);
-//     return res.json();
-//   })
-//   .then(res => {
-//     console.log(res);
-//   })
-//   .catch(err => {
-//     console.log("something went wrong...", err);
-//   });
-var acc = document.getElementsByClassName("accordion");
-var i;
-
+const url = "http://api.icndb.com/jokes/random?limitTo=[nerdy]";
+let joke = "";
+fetch(url)
+  .then(res => {
+    console.log("Sucess!", res);
+    return res.json();
+  })
+  .then(res => {
+    joke = res.value.joke;
+    console.log(joke);
+  })
+  .catch(err => {
+    console.log("something went wrong...", err);
+  });
+let acc = document.getElementsByClassName("accordion");
+let i;
+//let joke = res.json()[0].url;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
@@ -21,7 +22,7 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
 
     /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
+    let panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
