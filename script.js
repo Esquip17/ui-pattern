@@ -7,7 +7,17 @@ fetch(url)
   })
   .then(res => {
     joke = res.value.joke;
-    console.log(joke);
+    document.getElementsByClassName("punchline")[0].innerText = joke;
+
+    // .innerText = joke;
+    // document
+    //   .getElementsByClassName("accordian")
+
+    //   .addEventListener("click", function() {
+    //     document.getElementsByClassName("punchline")[0].innerHtml = joke;
+    //   });
+
+    // console.log(joke);
   })
   .catch(err => {
     console.log("something went wrong...", err);
