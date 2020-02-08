@@ -40,7 +40,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-// document
-//   .getElementsByClassName(".random")
-//   .addEventListener("click", location.reload);
-// document.location.reload;
+document
+  .getElementsByClassName(".random")
+  .addEventListener("click", location.reload);
+document.location.reload;

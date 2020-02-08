@@ -8,8 +8,7 @@ header {
   background-color: #15130b;
 }
 body {
-  padding: 30px, 5px, 30px, 5px;
-  margin: 30px, 5px, 30px, 5px;
+  background-color: rgba(240, 180, 140, 0.198);
 }
 section {
   border: 10px;
@@ -61,6 +60,9 @@ footer {
 h1 {
   font-size: 30px;
   color: #dad9d3;
+}
+container {
+  background-color: olive;
 }
 .random {
   background-color: #c5c4ba;
