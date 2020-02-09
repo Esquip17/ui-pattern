@@ -19,6 +19,8 @@ section {
   background-color: #78866b;
 }
 .main {
+  border-width: 10px;
+  border-color: ghostwhite;
   padding: 10px 200px 10px 200px;
   display: block;
   justify-content: center;

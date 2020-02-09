@@ -27,8 +27,6 @@ let i;
 //let joke = res.json()[0].url;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
 
     /* Toggle between hiding and showing the active panel */
@@ -40,7 +38,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-document
-  .getElementsByClassName(".random")
-  .addEventListener("click", location.reload);
-document.location.reload;
+// document
+//   .getElementsByClassName(".random")
+//   .addEventListener("click", location.reload());
+//     alert.('page is reloaded')
